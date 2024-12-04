@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "chrome-alarm-extension",
+    "version": "1.0.0",
+    "description": "An extension to popup a message between given time-range",
+    "background": {
+        "service_worker": "background.js"        
+      },
+      "icons": {
+    "48": "clock.png",
+    "128": "clock.png"
+  },
+    "permissions": [
+        "notifications",
+        "alarms",
+        "storage"
+      ]  
+    
+  }
