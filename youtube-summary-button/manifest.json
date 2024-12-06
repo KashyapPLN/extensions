@@ -4,11 +4,15 @@
   "version": "1.0",
   "description": "Adds a summary button and summary to YouTube videos.",
   "permissions": ["scripting", "activeTab"],
-  "host_permissions": ["https://www.youtube.com/*"],
+  "host_permissions": ["https://www.youtube.com/*","https://hipsum.co/"],
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
       "js": ["content.js"]
     }
-  ]
+  ],
+  "background": {
+      "service_worker": "background.js"
+      
+    }
 }
